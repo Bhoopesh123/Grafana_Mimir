@@ -21,8 +21,9 @@ Add the demo.yaml in the same folder.
 
     sudo vim /etc/prmetheus/prometheus.yml  
 
-Add the remote write
-    remote_write:
+Add the remote write  
+
+  remote_write:
     - url: http://localhost:9009/api/v1/push
 
 Restart Prometheus  
