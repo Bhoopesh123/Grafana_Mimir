@@ -23,7 +23,7 @@ Add the demo.yaml in the same folder.
 
 Add the remote write  
 
-  remote_write:
+  remote_write:  
     - url: http://localhost:9009/api/v1/push
 
 Restart Prometheus  
