@@ -13,7 +13,7 @@ Please follow the below steps
 
 Enter the following content into the file:  
 
-'''
+'''yaml
   multitenancy_enabled: false
 
   blocks_storage:
