@@ -33,10 +33,12 @@ Restart Prometheus
 
 # 4. Add Grafana Mimir as a Prometheus data source  
 
-In a browser, go to the Grafana server at http://localhost:3000/datasources.
+In a browser, go to the Grafana server at http://localhost:3000/datasources.  
+
 Sign in using the default username admin and password ****.
+
 Configure a new Prometheus data source to query the local Grafana Mimir server using the following settings:
 
 Name:	Mimir
-URL: http://mimir:9009/prometheus if you used Docker
+URL: http://mimir:9009/prometheus if you used Docker  
      http://localhost:9009/prometheus if you used local binary
