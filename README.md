@@ -39,6 +39,6 @@ Sign in using the default username admin and password ****.
 
 Configure a new Prometheus data source to query the local Grafana Mimir server using the following settings:
 
-Name:	Mimir
+Name:	Mimir  
 URL: http://mimir:9009/prometheus if you used Docker  
      http://localhost:9009/prometheus if you used local binary
