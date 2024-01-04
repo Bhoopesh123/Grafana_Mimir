@@ -13,6 +13,7 @@ Please follow the below steps
 
 Enter the following content into the file:  
 
+'''
   multitenancy_enabled: false
 
   blocks_storage:
@@ -55,6 +56,7 @@ Enter the following content into the file:
   store_gateway:
     sharding_ring:
       replication_factor: 1
+'''
 
 # 2. Run Grafana Mimir:  
 
