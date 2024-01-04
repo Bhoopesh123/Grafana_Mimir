@@ -11,7 +11,7 @@ Please follow the below steps
     chmod +x mimir
     sudo vim demo.yaml
 
-## Enter the following content into the file:
+## Enter the following content into the file:  
 
   multitenancy_enabled: false
 
