@@ -13,51 +13,48 @@ Please follow the below steps
 
 ## Enter the following content into the file:
 
-# Do not use this configuration in production.
-# It is for demonstration purposes only.
-multitenancy_enabled: false
+  multitenancy_enabled: false
 
-blocks_storage:
-  backend: filesystem
-  bucket_store:
-    sync_dir: /tmp/mimir/tsdb-sync
-  filesystem:
-    dir: /tmp/mimir/data/tsdb
-  tsdb:
-    dir: /tmp/mimir/tsdb
+  blocks_storage:
+    backend: filesystem
+    bucket_store:
+      sync_dir: /tmp/mimir/tsdb-sync
+    filesystem:
+      dir: /tmp/mimir/data/tsdb
+    tsdb:
+      dir: /tmp/mimir/tsdb
 
-compactor:
-  data_dir: /tmp/mimir/compactor
-  sharding_ring:
-    kvstore:
-      store: memberlist
+  compactor:
+    data_dir: /tmp/mimir/compactor
+    sharding_ring:
+      kvstore:
+        store: memberlist
 
-distributor:
-  ring:
-    instance_addr: 127.0.0.1
-    kvstore:
-      store: memberlist
+  distributor:
+    ring:
+      instance_addr: 127.0.0.1
+      kvstore:
+        store: memberlist
 
-ingester:
-  ring:
-    instance_addr: 127.0.0.1
-    kvstore:
-      store: memberlist
-    replication_factor: 1
+  ingester:
+    ring:
+      instance_addr: 127.0.0.1
+      kvstore:
+        store: memberlist
+      replication_factor: 1
 
-ruler_storage:
-  backend: filesystem
-  filesystem:
-    dir: /tmp/mimir/rules
+  ruler_storage:
+    backend: filesystem
+    filesystem:
+      dir: /tmp/mimir/rules
 
-server:
-  http_listen_port: 9009
-  log_level: error
+  server:
+    http_listen_port: 9009
+    log_level: error
 
-store_gateway:
-  sharding_ring:
-    replication_factor: 1
-## Till above line only
+  store_gateway:
+    sharding_ring:
+      replication_factor: 1
 
 # 2. Run Grafana Mimir:  
 
